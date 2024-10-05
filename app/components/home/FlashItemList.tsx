@@ -1,5 +1,4 @@
 "use client";
-
 import Card from "../shared/Card";
 import { useFetchFlashSales } from "@/app/hooks/useFetchFlashSales";
 import Spinner from "../shared/Spinner";
@@ -7,11 +6,9 @@ import Error from "../shared/Error";
 
 const FlashItemList = () => {
   const { categories, loading, error } = useFetchFlashSales();
-
   if (loading) {
     return <Spinner />;
   }
-
   return (
     <>
       <h1 className="text-2xl text-black font-bold px-6 py-4 ">Flash sale</h1>

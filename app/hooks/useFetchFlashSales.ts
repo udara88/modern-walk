@@ -9,7 +9,9 @@ export const useFetchFlashSales = () => {
   useEffect(() => {
     const fetchFlashList = async () => {
       try {
-        const { data } = await customFetch.get<Category[]>(`/products?limit=5`);
+        const { data } = await customFetch.get<Category[]>(
+          `/products?sort=desc`
+        );
         setCategories(data);
         setLoading(false);
       } catch (error) {

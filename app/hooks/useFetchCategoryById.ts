@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { customFetch } from "../components/utils";
 import { Category } from "../types";
@@ -9,6 +10,7 @@ export const useFetchCategoryById = (categoryId: string) => {
 
   useEffect(() => {
     const fetchCategoryById = async () => {
+      console.log(categoryId);
       try {
         const { data } = await customFetch.get<Category[]>(
           `/products/category/${categoryId}`

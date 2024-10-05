@@ -25,11 +25,10 @@ npm install
 
 yarn install
 
-4. ## Run in development server
+## Run development server
 
-# using npm
-
-npm run dev
+1. Using npm
+   npm run dev
 
 # OR using yarn
 

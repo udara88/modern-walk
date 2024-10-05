@@ -14,7 +14,7 @@ Make sure you have Node.js installed on your system. You can download it from [n
 ## Installation
 
 1. Clone the repo
-   git clone https://github.com/udara88/todos.git
+   git clone https://github.com/udara88/modern-walk.git
 
 2.cd modern-walk
 

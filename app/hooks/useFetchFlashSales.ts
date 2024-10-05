@@ -10,7 +10,7 @@ export const useFetchFlashSales = () => {
     const fetchFlashList = async () => {
       try {
         const { data } = await customFetch.get<Category[]>(
-          `/products?sort=desc`
+          `/products?limit=5&sort=desc`
         );
         setCategories(data);
         setLoading(false);
